@@ -6,7 +6,7 @@
 #    By: adebray <adebray@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/19 11:21:22 by adebray           #+#    #+#              #
-#    Updated: 2016/04/02 13:44:07 by adebray          ###   ########.fr        #
+#    Updated: 2016/04/02 15:58:53 by adebray          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME		= libft.a
 
 HEADDIR		?= inc
 CC			?= clang
-mCFLAGS		?= -I $(HEADDIR) -Werror -Wall -Wextra -Wuninitialized -O3
+CFLAGS		?= -I $(HEADDIR) -Werror -Wall -Wextra -Wuninitialized -O3
 
 SRC			= $(shell find . -name "*.c")
 OBJ			= $(subst .c,.o,$(SRC))
